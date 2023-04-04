@@ -1,0 +1,10 @@
+:root{
+  /* White theme */
+  -white: rgb(255, 255, 255);
+  -pink: rgb(232, 96, 96);
+  -red: rgb(164, 68, 68);
+  /* Dark theme */
+  -D-white: rgb(255, 255, 255);
+  -D-pink: rgb(255, 255, 255);
+  -D-red: rgb(232, 96, 96);
+}
