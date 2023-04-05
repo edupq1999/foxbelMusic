@@ -17,18 +17,11 @@ const Home = ({text}) => {
   return (
     <section className='home'>
         {
-          text
+          songs
           ?
-          (
-            songs
-            ?
-            <Results songs = {songs}/>
-            :
-            <Loader />
-          )
+          <Results songs = {songs}/>
           :
-          setText("adele")
-
+          <Loader />
         }
     </section>
   )

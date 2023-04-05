@@ -5,6 +5,10 @@ const NavBar = ({setText}) => {
     const [logged, setLogged] = useState(true)
 
     const search = e => {
+        text == ''
+        ?
+        setText('adele')
+        :
         setText(e.target.value)
     }
   return (

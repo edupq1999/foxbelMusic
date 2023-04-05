@@ -15,7 +15,6 @@ function App() {
       <NavBar setText = {setText}/>
       <Home 
         text = {text}
-        setText = {setText}
       />
       <PlayBar/> 
     </div>
