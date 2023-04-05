@@ -1,0 +1,30 @@
+.songCard{
+    width: 140px;
+}
+.songCard_img_container{
+    position: relative;
+    color: var(--white);
+}
+.play_icon_card,
+.more_icon_card{
+    position: absolute;
+}
+.play_icon_card{
+    top: 50%;
+    left: 50%;
+    scale: 2;
+}
+.more_icon_card{
+    top: -10px;
+    right: 15px;
+    scale: 3;
+}
+.songCard_img{
+    max-width: 140px;
+}
+.songCard_title{
+    font-size: 14px;
+}
+.songCard_artist{
+    font-size: 12px;
+}

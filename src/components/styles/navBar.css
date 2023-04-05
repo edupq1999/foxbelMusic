@@ -24,6 +24,7 @@
     font-size: 14px;
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: 2em;
     width: 45%;
 }

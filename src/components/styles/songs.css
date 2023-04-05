@@ -1,0 +1,17 @@
+.songs_container{
+    width: 85%;
+    margin: auto;
+}
+.songs_title{
+    font-size: 22px;
+    color: var(--pink);
+    margin-bottom: 20px;
+}
+.songsCard_Container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}

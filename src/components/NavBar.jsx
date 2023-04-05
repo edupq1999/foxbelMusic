@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className='navBar_results'>
         <div className='navBar_results_input_container'>
-            <input className='navBar_results_input' type="text" />
+            <input className='navBar_results_input' type="text" placeholder='Buscar'/>
             <i className="fa-solid fa-magnifying-glass navBar_results_input_icon"></i>
         </div>
         {
