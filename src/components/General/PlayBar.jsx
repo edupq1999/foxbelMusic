@@ -20,6 +20,7 @@ const PlayBar = () => {
   return (
     <div className='playBar'>
         <input className='playBar_song' type="range" max={100}/>
+        <audio src=""></audio>
         <div className='playBar_info'>
             <img className='playBar_img' src="https://static.dw.com/image/49947376_303.jpg" alt="Song Picture" />
             <div className='playBar_info_container'>

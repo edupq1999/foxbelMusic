@@ -8,12 +8,15 @@ import { useState } from 'react'
 function App() {
 
   const [text, setText] = useState('adele')
+  const [songs, setSongs] = useState()
 
   return (
     <div className="App">
       <Header />
       <NavBar setText = {setText}/>
       <Home 
+        songs = {songs}
+        setSongs = {setSongs}
         text = {text}
       />
       <PlayBar/> 
