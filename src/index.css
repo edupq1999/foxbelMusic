@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+:root{
+  --white: rgb(255, 255, 255);
+  --pink: rgb(232, 96, 96);
+  --red: rgb(97, 26, 26);
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'QuicksaNd', sans-serif;
-}
-#lightTheme{
-  -white: rgb(255, 255, 255);
-  -pink: rgb(232, 96, 96);
-  -red: rgb(97, 26, 26);
 }
 #darkTheme{
   -white: rgb(0, 0, 0);
