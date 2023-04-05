@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import './styles/playBar.css'
 
-const PlayBar = () => {
+const PlayBar = ({setText}) => {
 
     const [volume, setVolume] = useState(100)
     const [previousVolume, setPreviousVolume] = useState(0)
@@ -17,9 +17,13 @@ const PlayBar = () => {
         }        
     }
 
+    const search = e => {
+        setText(e.target.value)
+    }
+
   return (
     <div className='playBar'>
-        <input className='playBar_song' type="range" max={100}/>
+        <input onChange={search} className='playBar_song' type="range" max={100}/>
         <div className='playBar_info'>
             <img className='playBar_img' src="https://static.dw.com/image/49947376_303.jpg" alt="Song Picture" />
             <div className='playBar_info_container'>
