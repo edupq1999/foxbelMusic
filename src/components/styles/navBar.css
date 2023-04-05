@@ -1,5 +1,6 @@
 .navBar_results{
-    width: 100%;
+    margin: auto;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
