@@ -15,3 +15,6 @@
   -pink: rgb(124, 66, 66);
   -red: rgb(97, 26, 26);
 }
+ul{
+  list-style: none;
+}
