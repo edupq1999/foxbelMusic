@@ -35,6 +35,9 @@
 .firstSong_followers{
     font-size: 14px;
 }
+.firstSong_followers_number{
+    font-size: 10px;
+}
 .firstSong_description{
     margin-top: 15px;
     font-size: 12px;
@@ -46,7 +49,7 @@
 .firstSong_buttons{
     display: none;
 }
-@media (min-width: 700px){
+@media (min-width: 750px){
     .firstSong{
         display: grid;
         grid-template-columns: 1fr 1fr;

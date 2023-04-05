@@ -1,5 +1,5 @@
 .songCard{
-    width: 140px;
+    width: 120px;
 }
 .songCard_img_container{
     position: relative;
@@ -20,7 +20,7 @@
     scale: 3;
 }
 .songCard_img{
-    max-width: 140px;
+    max-width: 120px;
 }
 .songCard_title{
     font-size: 14px;
