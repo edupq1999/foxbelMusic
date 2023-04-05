@@ -1,13 +1,28 @@
-import React from 'react'
-import Header from '../components/Header'
-import Results from '../components/Results'
+import React, { useEffect, useState } from 'react'
 import './styles/home.css'
+import axios from 'axios'
+import Results from '../components/Home/Results'
+import Loader from '../components/General/Loader'
 
 const Home = () => {
+  const [songs, setSongs] = useState()
+
+  useEffect(() => {
+    const URL = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=eminem`
+    axios.get(URL)
+      .then(res => setSongs(res.data.data))
+      .catch(err => console.log(err))
+  }, [])
+  
   return (
     <section className='home'>
-        <Header></Header>
-        <Results></Results>
+        {
+          songs
+          ?
+          <Results songs = {songs}/>
+          :
+          <Loader />
+        }
     </section>
   )
 }

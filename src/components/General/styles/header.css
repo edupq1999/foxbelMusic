@@ -50,7 +50,7 @@
 }
 @media (min-width: 570px){
     .header{
-        width: 330px;
+        width: 30%;
         height: 100vh;
         justify-content: unset;
     }

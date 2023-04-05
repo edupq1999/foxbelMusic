@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: 'QuicksaNd', sans-serif;
 }
+@media (min-width: 570px){
+  .App_container{
+    margin-top: -680px;
+  }
+}

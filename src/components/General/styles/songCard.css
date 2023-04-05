@@ -1,5 +1,6 @@
 .songCard{
     width: 120px;
+    height: 200px;
 }
 .songCard_img_container{
     position: relative;
