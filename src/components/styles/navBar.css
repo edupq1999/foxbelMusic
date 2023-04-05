@@ -1,0 +1,32 @@
+.navBar_results{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-height: 50px;
+}
+.navBar_results_input_container{
+    position: relative;
+    width: 100%;
+}
+.navBar_results_input{
+    width: 90%;
+    border: 1px solid rgba(163, 163, 163, 0.733);
+    padding: 5px;
+    border-radius: 15px;
+}
+.navBar_results_input_icon{
+    position: absolute;
+    right: 12%;
+    top: 5px;
+}
+.navBar_user{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 45%;
+}
+.user_icon{
+    color: var(--pink);
+}

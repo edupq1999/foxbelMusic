@@ -1,0 +1,94 @@
+.firstSong{
+    margin: auto;
+    width: 85%;
+    background-color: var(--pink2);
+}
+.firstSong_container{
+    position: relative;
+    color: var(--white);
+}
+.firstSong_img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.play_icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    scale: 3;
+}
+.follow_icon{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    scale: 2;
+}
+.firstSong_info{
+    padding: 15px;
+    color: var(--white);
+}
+.firstSong_title{
+    font-size: 22px;
+}
+.firstSong_followers{
+    font-size: 14px;
+}
+.firstSong_description{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.firstSong_followers_number{
+    font-weight: bold;
+    color: var(--red);
+}
+.firstSong_buttons{
+    display: none;
+}
+@media (min-width: 700px){
+    .firstSong{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-height: 250px;
+    }
+    .follow_icon{
+        display: none;
+    }
+    .firstSong_container{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        max-height: 250px;
+    }
+    .firstSong_background{
+        grid-column: 2/3;
+    }
+    .firstSong_buttons{
+        grid-column: 2/3;
+    }
+    .firstSong_buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto auto 20px 7.5%;
+        gap: 0.5em;
+    }
+    .firstSong_buttons button{
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+    .firstSong_button_play{
+        background-color: var(--pink);
+        color: var(--white);
+        border: 0;
+    }
+    .firstSong_button_follow{
+        color: var(--pink);
+        border: 1 solid var(--pink);
+    }
+    .firstSong_button_more{
+        font-weight: bold;
+        color: var(--white);
+    }
+}

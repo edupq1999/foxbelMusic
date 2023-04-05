@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import NavBar from './NavBar'
+import './styles/results.css'
+import FirstSong from './FirstSong'
 
 const Results = () => {
+    
+
   return (
-    <div>Results</div>
+    <section className='results'>
+        <NavBar></NavBar>
+        <FirstSong></FirstSong>
+    </section>
   )
 }
 

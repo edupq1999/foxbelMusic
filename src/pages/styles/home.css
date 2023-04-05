@@ -1,0 +1,5 @@
+@media (min-width: 570px) {
+    .home{
+        display: flex;
+    }
+}
