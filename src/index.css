@@ -1,10 +1,17 @@
-:root{
-  /* White theme */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'QuicksaNd', sans-serif;
+}
+#lightTheme{
   -white: rgb(255, 255, 255);
   -pink: rgb(232, 96, 96);
-  -red: rgb(164, 68, 68);
-  /* Dark theme */
-  -D-white: rgb(255, 255, 255);
-  -D-pink: rgb(255, 255, 255);
-  -D-red: rgb(232, 96, 96);
+  -red: rgb(97, 26, 26);
+}
+#darkTheme{
+  -white: rgb(0, 0, 0);
+  -pink: rgb(124, 66, 66);
+  -red: rgb(97, 26, 26);
 }
