@@ -6,7 +6,6 @@ const NavBar = ({setText}) => {
 
     const search = e => {
         setText(e.target.value)
-        console.log(e.target.value)
     }
   return (
     <nav className='navBar_results'>

@@ -1,7 +1,11 @@
+.home{
+    min-height: 50vh;
+}
 @media (min-width: 570px) {
     .home{
         display: flex;
         width: 70%;
         margin-left: 30%;
+        min-height: 80vh;
     }
 }
