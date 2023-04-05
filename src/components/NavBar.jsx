@@ -14,7 +14,7 @@ const NavBar = () => {
             ?
             <div className='navBar_user'>
                 {/* <img className='navBar_user_img' src="" alt="user_photo"/> */}
-                <i class="fa-solid fa-user user_icon"></i>
+                <i className="fa-solid fa-user user_icon"></i>
                 <span className='navBar_user_name'>Eduardo</span>
             </div>
             :
