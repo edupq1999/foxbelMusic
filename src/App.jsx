@@ -9,17 +9,24 @@ function App() {
 
   const [text, setText] = useState('adele')
   const [songs, setSongs] = useState()
+  const [currentSong, setCurrentSong] = useState()
 
   return (
     <div className="App">
       <Header />
-      <NavBar setText = {setText}/>
+      <div className='App_container'>
+      <NavBar 
+        setText = {setText}
+        text = {text}
+      />
       <Home 
         songs = {songs}
         setSongs = {setSongs}
+        setCurrentSong = {setCurrentSong}
         text = {text}
       />
-      <PlayBar/> 
+      </div>
+        <PlayBar currentSong = {currentSong}/> 
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './styles/navBar.css'
 
-const NavBar = ({setText}) => {
+const NavBar = ({text, setText}) => {
     const [logged, setLogged] = useState(true)
 
     const search = e => {

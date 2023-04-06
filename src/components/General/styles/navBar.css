@@ -31,11 +31,3 @@
 .user_icon{
     color: var(--pink);
 }
-@media (min-width: 570px){
-    .navBar_results{
-        width: 70%;
-        margin-left: 30%;
-        position: absolute;
-        top: 10px;
-    }
-}

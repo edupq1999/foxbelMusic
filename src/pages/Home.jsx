@@ -4,7 +4,7 @@ import axios from 'axios'
 import Results from '../components/Home/Results'
 import Loader from '../components/General/Loader'
 
-const Home = ({text, songs, setSongs}) => {
+const Home = ({text, songs, setSongs, setCurrentSong}) => {
   
   useEffect(() => {
     const URL = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${text}`
@@ -21,7 +21,10 @@ const Home = ({text, songs, setSongs}) => {
         {
           songs
           ?
-          <Results songs = {songs}/>
+          <Results 
+            songs = {songs}
+            setCurrentSong = {setCurrentSong}
+          />
           :
           <Loader />
         }

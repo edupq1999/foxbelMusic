@@ -1,3 +1,6 @@
+audio::-webkit-media-controls-panel{
+    background-color: var(--pink);
+}
 .playBar{
     width: 100%;
     height: 25vh;
@@ -11,24 +14,6 @@
     position: sticky;
     bottom: 0;
     z-index: 2;
-}
-.playBar_song{
-    -webkit-appearance: none;
-    background: var(--white);
-    height: 5px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.playBar_song::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    height: 5px;
-    width: 10px;
-    background-color: var(--red);
-    transition: 1s;
-}
-.playBar_song::-webkit-slider-thumb:hover{
-    height: 10px;
-    transition: 1s;
 }
 .playBar_img{
     display: none;
@@ -101,14 +86,12 @@
 }
 @media (min-width: 570px){
     .playBar{
+        grid-column: 1/4;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        height: 105px;
-        min-height: 105px;
+        height: 100px;
+        min-height: 100px;
         gap: 0;
-    }
-    .playBar_song{
-        margin: 0;
     }
     .playBar_info{
         display: grid;
@@ -126,9 +109,6 @@
         height: 100px;
         width: 100px;
         grid-column: 1/2;
-    }
-    .playBar_song{
-        grid-column: 1/4;
     }
     .playBar_info{
         grid-column: 1/2;

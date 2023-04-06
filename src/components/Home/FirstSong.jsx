@@ -1,10 +1,13 @@
 import React from 'react'
 import './styles/firstSong.css'
 
-const FirstSong = ({song}) => {
+const FirstSong = ({song, setCurrentSong}) => {
+    const play = () => {
+        setCurrentSong(song)
+    }
   return (
     <div className='firstSong'>
-        <div className='firstSong_container'>
+        <div onClick={play} className='firstSong_container'>
             <img className='firstSong_img' src={song?.album.cover_big} alt="song_img" />
             <i className="fa-solid fa-play fa-xl play_icon"></i>
             <i className="fa-solid fa-plus fa-xl follow_icon"></i>
